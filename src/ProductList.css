@@ -46,6 +46,20 @@ body {
     align-items: center; /* アイテムを中央に配置 */
     justify-content: center; /* アイテムを中央に配置 */
 }
+
+/* 商品グリッド内のタイトルのスタイルを指定　　2024/12/19 石川追加*/
+.product-grid h1 {
+    text-align: center; /* タイトルを中央揃えにする */
+    text-transform: uppercase; /* テキストをすべて大文字に変換する */
+    border-top: 2px solid; /* タイトルの上部に2pxの境界線を追加 */
+    border-bottom: 2px solid; /* タイトルの下部に2pxの境界線を追加 */
+    padding: 5px; /* タイトルの内側に5pxの余白を設定 */
+    margin: 30px auto; /* タイトル周囲に30pxの外側余白を設定し中央揃え */
+    max-width: 600px; /* タイトルの最大幅を600pxに制限 */
+}
+
+
+
 .product-list {
     display: flex; /* フレックスボックスを使用 */
     flex-wrap: wrap; /* アイテムが折り返す */
