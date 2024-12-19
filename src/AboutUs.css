@@ -1,33 +1,40 @@
+/* About Usセクション全体のコンテナ */
 .about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
-    text-align: justify;
-  }
-  
-  .about-us-heading {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-description {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .about-us-content {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  .plant_logo_right{
-    text-align: right;
-  }
+  width: 1000px; /* コンテナの横幅を設定 */
+  /* margin: 0 auto; 中央揃えのマージン（コメントアウト中） */
+  /* padding: 20px; コンテナ内の余白（コメントアウト中） */
+  /* background-color: red; 背景色（デバッグ用に設定可能、コメントアウト中） */
+  text-align: justify; /* テキストを両端揃えに設定 */
+}
 
-  .plant_logo_left{
-    text-align: left;
-  }
+/* About Usセクションの見出しスタイル */
+.about-us-heading {
+  font-size: 32px; /* フォントサイズを設定 */
+  font-weight: bold; /* 太字に設定 */
+  color: #333; /* テキストカラーを濃い灰色に設定 */
+  margin-bottom: 20px; /* 下部に余白を追加 */
+}
+
+/* 概要テキストのスタイル */
+.about-us-description {
+  font-size: 18px; /* フォントサイズを設定 */
+  color: #666; /* テキストカラーを薄い灰色に設定 */
+  margin-bottom: 30px; /* 下部に余白を追加 */
+  text-align: center; /* テキストを中央揃えに設定 */
+}
+
+/* 詳細な内容のパラグラフスタイル */
+.about-us-content {
+  font-size: 18px; /* フォントサイズを設定 */
+  margin-bottom: 20px; /* 下部に余白を追加 */
+}
+
+/* 右揃えのロゴ用スタイル */
+.plant_logo_right {
+  text-align: right; /* コンテンツを右揃えに設定 */
+}
+
+/* 左揃えのロゴ用スタイル */
+.plant_logo_left {
+  text-align: left; /* コンテンツを左揃えに設定 */
+}

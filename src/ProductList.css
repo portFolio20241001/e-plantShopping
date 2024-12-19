@@ -1,252 +1,294 @@
-/* Reset some default styles */
+/* デフォルトのスタイルをリセット */
 body, h1, ul {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* マージンをリセット */
+    padding: 0; /* パディングをリセット */
 }
 
-/* Set a background color */
+/* 背景色を設定 */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* フォントを設定 */
+    background-color: #f0f0f0; /* 背景色を薄いグレーに設定 */
 }
 
-/* Navbar */
+/* ナビゲーションバー */
 .navbar {
-    background-color: #4CAF50;
-    color: #fff!important;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
+    background-color: #4CAF50; /* 背景色を緑に設定 */
+    color: #fff!important; /* 文字色を白に設定 */
+    padding: 15px; /* パディングを設定 */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: space-between; /* アイテムを両端に配置 */
+    align-items: center; /* アイテムを中央に配置 */
+    font-size: 20px; /* フォントサイズを設定 */
 }
 
 .navbar .ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1100px;
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: space-between; /* アイテムを間隔を空けて配置 */
+    align-items: center; /* アイテムを中央に配置 */
+    width: 1100px; /* 幅を1100pxに設定 */
 }
 
 .navbar li {
-    margin-right: 30px;
+    margin-right: 30px; /* 各リストアイテムの右側にマージンを追加 */
 }
 
 .navbar .ul div a {
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-   
+    color: white; /* リンクの文字色を白に設定 */
+    font-size: 30px; /* フォントサイズを30pxに設定 */
+    text-decoration: none; /* 下線を削除 */
 }
 
-/* Product Grid */
+/* 商品グリッド */
 .product-grid {
-    display:flex;
-    flex-direction: column;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
+    display:flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦方向にアイテムを並べる */
+    width: 100vw; /* ビューポートの幅に合わせる */
+    align-items: center; /* アイテムを中央に配置 */
+    justify-content: center; /* アイテムを中央に配置 */
 }
 .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    /* background-color: pink; */
-    /* justify-content: space-between; */
-    padding: 20px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* フレックスボックスを使用 */
+    flex-wrap: wrap; /* アイテムが折り返す */
+    gap: 50px; /* アイテム間に50pxのギャップを追加 */
+    padding: 20px; /* パディングを設定 */
+    width: 100%; /* 幅を100%に設定 */
+    align-items: center; /* アイテムを中央に配置 */
+    justify-content: center; /* アイテムを中央に配置 */
+    /* border: 1px solid #ef620a; デバッグ用（石川）*/
 }
 
-/* Product Card */
+/* 商品カード */
 .product-card {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
-    max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-    
-    gap: 20px;
+    flex: 0 0 calc(26.33% - 20px); /* 3列に並べるための幅を設定 */
+    /* max-width: calc(26.33% - 20px);  最大幅を設定 */
+    margin-bottom: 20px; /* 下にマージンを追加 */
+    padding: 20px; /* パディングを設定 */
+    background-color: #fff; /* 背景色を白に設定 */
+    border: 1px solid #ccc; /* 枠線を薄い灰色に設定 */
+    border-radius: 5px; /* 角を丸く設定 */
+    text-align: center; /* 中央揃え */
+    position: relative; /* 相対位置に設定 */
+    gap: 20px; /* アイテム間に20pxのギャップを追加 */
+    border: 2px solid #2106d2; /* デバッグ用（石川）*/
 }
 
-/* Pseudo-classes - Hover effect on product button */
+/* 商品カードのホバー効果 */
 .product-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1;
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+    transition: transform 0.3s ease-in-out; /* アニメーション効果 */
+    z-index: 1; /* 他の要素の上に表示 */
 }
 
 .product-title {
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: bold; /* 太字に設定 */
+    margin-bottom: 10px; /* 下にマージンを追加 */
 }
 
 .product-price {
-    color: #e74c3c;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    color: #e74c3c; /* 価格を赤色に設定 */
+    font-size: 1.2rem; /* フォントサイズを少し大きく設定 */
+    margin-bottom: 10px; /* 下にマージンを追加 */
 }
 
 .product-image {
-    max-width: 100%;
-    height: 200px; /* Adjust height for better consistency */
+    max-width: 100%; /* 画像が親要素の幅を超えないように設定 */
+    height: 200px; /* 高さを200pxに設定 */
 }
 
 .product-button {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 10px;
+    background-color: #e74c3c; /* ボタン背景色を赤に設定 */
+    color: #fff; /* ボタン文字色を白に設定 */
+    border: none; /* 枠線を削除 */
+    padding: 10px 20px; /* ボタンにパディングを追加 */
+    cursor: pointer; /* カーソルをポインタに変更 */
+    transition: background-color 0.3s ease-in-out; /* ホバー時の背景色変更にアニメーションを追加 */
+    margin-top: 10px; /* 上にマージンを追加 */
 }
 
 .product-button:hover {
-    background-color: #c0392b;
+    background-color: #c0392b; /* ホバー時にボタン背景色を濃い赤に変更 */
 }
 
-/* Pseudo-elements - Sale badge */
+/* 商品カードの「SALE」バッジ */
 .product-card::before {
-    content: "SALE";
-    background-color: #e74c3c;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
-    border-radius: 0 0 0 5px;
+    content: "SALE"; /* SALEというテキストを表示 */
+    background-color: #e74c3c; /* 背景色を赤に設定 */
+    color: #fff; /* 文字色を白に設定 */
+    position: absolute; /* 絶対位置に設定 */
+    top: 0; /* 上端に配置 */
+    right: 0; /* 右端に配置 */
+    padding: 5px 10px; /* パディングを設定 */
+    border-radius: 0 0 0 5px; /* 角を丸く設定 */
 }
+
+/* ホームリンクタグ */
 .tag_home_link{
-    display: flex;
-    /* background-color: red; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 中央揃え */
+    margin-left: 50px; /* 左にマージンを追加 */
+    color: white; /* 文字色を白に設定 */
+    text-decoration: none; /* 下線を削除 */
+    font-size: 20px; /* フォントサイズを設定 */
 }
+
+/* タイトル */
 .tag_home_link h3{
-    font-size: 30px;
+    font-size: 30px; /* フォントサイズを設定 */
 }
+
+/* タグのリンク */
 .tag a{
-    text-decoration: none;
+    text-decoration: none; /* 下線を削除 */
 }
+
+/* タグのコンテナ */
 .tag {
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 400px; /* 幅を400pxに設定 */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* アイテムを中央に配置 */
+    justify-content: center; /* アイテムを中央に配置 */
+    /* border: 1px solid #ef620a; デバッグ用（石川）*/
 }
 
+/* タグの画像 */
 .tag img {
-    height: 70px;
-    width: 70px;
-    border-radius: 70%;
-    
+    height: 70px; /* 高さを70pxに設定 */
+    width: 70px; /* 幅を70pxに設定 */
+    border-radius: 70%; /* 丸くする */
 }
 
+/* ラグジュアリータグ */
 .luxury {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 650px;
-    font-size: 19px;
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 中央揃え */
+    width: 650px; /* 幅を650pxに設定 */
+    font-size: 19px; /* フォントサイズを設定 */
 }
+
+
+/* Plantsページタグ */
+.plantsPages {
+    border: 1px solid #ef620a;
+}
+
+/* カートページタグ */
+.cartPages {
+    border: 1px solid #05b7f3;
+}
+
+
+/* カートアイコン */
 .cart{
-    color: white;
-    display: flex;
+    color: white; /* 文字色を白に設定 */
+    display: flex; /* フレックスボックスを使用 */
 }
+
+/* カート内の商品数 */
 .cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
-    position: absolute;
-    font-size: 29px;
-
+    margin-top: 16px; /* 上にマージンを追加 */
+    margin-left: 27px; /* 左にマージンを追加 */
+    position: absolute; /* 絶対位置に設定 */
+    font-size: 29px; /* フォントサイズを設定 */
 }
+
+/* 植物名のヘッダー */
 .plantname_heading{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    /* background-color: yellow; */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 中央揃え */
 }
-.plant_heading{
-    width: 400px;
-    text-align: center;
-    margin: 20px;
-    border: 1px solid rgb(5, 4, 4);
-    border-left: none;
-    border-right: none;
 
-    
+/* 植物のヘッダー */
+.plant_heading{
+    width: 400px; /* 幅を400pxに設定 */
+    text-align: center; /* 中央揃え */
+    margin: 20px; /* マージンを設定 */
+    border: 1px solid rgb(5, 4, 4); /* 枠線を設定 */
+    border-left: none; /* 左枠線を削除 */
+    border-right: none; /* 右枠線を削除 */
 }
-/* Add Media Query for responsiveness */
+
+/* メディアクエリ - レスポンシブデザイン */
 @media (max-width: 768px) {
     .product-card {
-        flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on smaller screens */
-        max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on smaller screens */
+        flex: 1 1 calc(50% - 20px); /* 小さい画面では2列に表示 */
+        max-width: calc(50% - 20px); /* 小さい画面では最大幅を50%に設定 */
     }
 }
-/* ProductList.css */
 
+/* ボタンのスタイル */
 .product-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .product-button:hover {
-    background-color: #45a049;
-  }
-  
-  .product-button.added-to-cart {
-    background-color: grey; /* Grey when product is added */
-  }
-  @media (max-width: 1200px) {
+    background-color: #4CAF50; /* ボタン背景色を緑に設定 */
+    border: none; /* 枠線を削除 */
+    color: white; /* 文字色を白に設定 */
+    padding: 10px 20px; /* パディングを設定 */
+    text-align: center; /* テキストを中央揃え */
+    text-decoration: none; /* 下線を削除 */
+    display: inline-block; /* インラインブロック要素に設定 */
+    font-size: 16px; /* フォントサイズを設定 */
+    margin: 4px 2px; /* マージンを設定 */
+    transition-duration: 0.4s; /* トランジション効果を設定 */
+    cursor: pointer; /* カーソルをポインタに設定 */
+}
+
+/* ホバー時の効果 */
+.product-button:hover {
+    background-color: #45a049; /* ホバー時に背景色を少し暗く設定 */
+}
+
+/* 追加された商品ボタンのスタイル */
+.product-button.added-to-cart {
+    background-color: grey; /* 商品が追加されたときに背景色をグレーに設定 */
+}
+
+/* 画面幅1200px以下でのレイアウト調整 */
+@media (max-width: 1200px) {
     .product-card {
-      flex: 1 1 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap on medium screens */
-      max-width: calc(33.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap on medium screens */
+        flex: 1 1 calc(33.33% - 20px); /* 3列表示に調整 */
+        max-width: calc(33.33% - 20px); /* 最大幅を調整 */
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+/* 画面幅768px以下でのレイアウト調整 */
+@media (max-width: 768px) {
     .product-card {
-      flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on small screens */
-      max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
+        flex: 1 1 calc(50% - 20px); /* 2列表示に調整 */
+        max-width: calc(50% - 20px); /* 最大幅を調整 */
     }
     .navbar {
-        flex-direction: column; /* Change flex direction to stack items vertically */
-        align-items: center; /* Align items to the center of the container */
-      }
-    
-      .tag {
-        margin-bottom: 20px; /* Add margin bottom for spacing */
-        text-align: center; /* Align text to the center */
-      }
-    
-      .ul {
-        display: flex; /* Set display to flex */
-        flex-direction: column; /* Change flex direction to stack items vertically */
-        gap: 10px; /* Add gap between items */
-      }
-    
-      .ul div {
-        text-align: center; /* Align text to the center */
-      }
-  }
+        flex-direction: column; /* ナビゲーションバーを縦並びに変更 */
+        align-items: center; /* 中央揃え */
+    }
+    .tag {
+        margin-bottom: 20px; /* タグの下にマージンを追加 */
+        text-align: center; /* テキストを中央揃え */
+    }
+    .ul {
+        display: flex; /* フレックスボックスを使用 */
+        flex-direction: column; /* 縦並びに変更 */
+        gap: 10px; /* アイテム間のギャップを追加 */
+    }
+    .ul div {
+        text-align: center; /* テキストを中央揃え */
+    }
+}
+
+/* カートアイコンの数字（バッジ）のスタイル （石川追記）*/
+/*
+/*.cart-badge .cart-icon{
+/*    position: absolute; /* 要素を絶対位置に配置（親要素を基準に） */
+/*    top: 0; /* 要素を親要素の上端に揃える */
+/*    right: 0; /* 要素を親要素の右端に揃える */
+/*    background-color: red; /* バッジの背景色を赤に設定 */
+/*    color: white; /* バッジ内の文字色を白に設定 */
+/*    border-radius: 50%; /* バッジの形状を円形にする */
+/*    padding: 4px 8px; /* バッジ内の文字と端の間隔を設定 */
+/*    font-size: 14px; /* バッジ内の文字サイズを設定 */
+/*    font-weight: bold; /* バッジ内の文字を太字にする */
+/*    display: flex; /* バッジ内でフレックスボックスを使用する */
+/*    justify-content: center; /* バッジ内の文字を水平中央に配置 */
+/*    align-items: center; /* バッジ内の文字を垂直中央に配置 */
+/*  }
